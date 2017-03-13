@@ -51,6 +51,6 @@ class Command_Parser(object):
 
 if __name__ == "__main__":
     input_param = sys.argv[:]
-    t = Command_Parser(input_param)
-    print t.domainToSearch, t.number_thread, t.filename
+    command_parser = Command_Parser(input_param)
+    print command_parser.domainToSearch, command_parser.number_thread, command_parser.filename
 

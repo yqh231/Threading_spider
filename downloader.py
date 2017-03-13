@@ -7,7 +7,9 @@ import Queue.Queue
 class Workder(Threading.thread):
     def __init__(self, Queue, *args, **kwargs):
         super(Workder, self).__init__(*args, **kwargs)
-
+        self.que = Queue
+    def run(self):
+        pass
 
 
 
